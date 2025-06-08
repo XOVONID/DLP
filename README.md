@@ -1,34 +1,41 @@
-head
-    <title>東龍自動服務系統<title>
-    <style>
-     body {
-      font-family:sens-serif； 
-      backgrond:#ffffff；
-      text-align:center；
-      padding:30px
-      }
-    {h1
-    color:#000000；
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>東龍自動服務系統</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #ffffff;
+      text-align: center;
+      padding: 30px;
     }
-    input， button {
-    padding:40px
-    font-size:35px
-    margin:3px
-    border radius:12px
-    border:5px；slide；#000000；
+
+    h1 {
+      color: #000000;
     }
+
+    input, button {
+      padding: 40px;
+      font-size: 35px;
+      margin: 3px;
+      border-radius: 12px;
+      border: 5px solid #000000;
+    }
+
     button {
-    background color:#808A86；
-    color:#000000；
-    curser:pointer；
+      background-color: #808A86;
+      color: #000000;
+      cursor: pointer;
     }
-    <style>
+  </style>
 </head>
-body
-    <h1>自動服務</h1>
-    button onclick=ordinary photo 300NT$>一般照300元</button>
-    button onclick=snapshot 400NT$>快照400元</button>
-    button onclick=addinional wash ordinary*1 100NT$>加洗一般件100元/組</button>
-    button onclick=addinional wash fast*1 150NT$>加洗快件150元/組</button>
-    <style>
-</h1>
+<body>
+  <h1>自動服務</h1>
+
+  <button onclick="alert('一般照 300 元')">一般照 300 元</button>
+  <button onclick="alert('快照 400 元')">快照 400 元</button>
+  <button onclick="alert('加洗一般件 100 元/組')">加洗一般件 100 元/組</button>
+  <button onclick="alert('加洗快件 150 元/組')">加洗快件 150 元/組</button>
+</body>
+</html>
