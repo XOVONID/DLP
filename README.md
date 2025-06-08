@@ -16,11 +16,11 @@
     }
 
     input, button {
-      padding: 40px;
-      font-size: 35px;
-      margin: 3px;
+      padding: 20px;
+      font-size: 24px;
+      margin: 5px;
       border-radius: 12px;
-      border: 5px solid #000000;
+      border: 3px solid #000000;
     }
 
     button {
@@ -28,14 +28,33 @@
       color: #000000;
       cursor: pointer;
     }
+
+    #total {
+      margin-top: 30px;
+      font-size: 28px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
   <h1>自動服務</h1>
 
-  <button onclick="alert('一般照 300 元')">一般照 300 元</button>
-  <button onclick="alert('快照 400 元')">快照 400 元</button>
-  <button onclick="alert('加洗一般件 100 元/組')">加洗一般件 100 元/組</button>
-  <button onclick="alert('加洗快件 150 元/組')">加洗快件 150 元/組</button>
+  <button onclick="addToTotal(300)">一般照 300 元</button>
+  <button onclick="addToTotal(400)">快照 400 元</button>
+  <button onclick="addToTotal(100)">加洗一般件 100 元/組</button>
+  <button onclick="addToTotal(150)">加洗快件 150 元/組</button>
+
+  <div id="total">總金額：0 元</div>
+
+  <script>
+    let total = 0;
+
+    function addToTotal(amount) {
+      total += amount;
+      document.getElementById("total").innerText = "總金額：" + total + " 元";
+    }
+  </script>
 </body>
 </html>
+
+
